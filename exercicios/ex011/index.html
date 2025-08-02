@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imagens que se adaptam sozinhas</title>
+</head>
+<body>
+    <h1>imagens dinâmicas</h1>
+    <p>aumente ou diminua o tamanho do navegador</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="img/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="img/foto-m.png" type="image/png">
+        <img src="img/foto-g.png" alt="g">
+    </picture>
+    <h1>Áudios em html5</h1>
+    <p>Reproduzindo Áudios</p>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="media/lofimalletkwon.mp3" type="audio/mpeg">
+        <source src="media/lofimalletkwon.ogg" type="audio/ogg">
+        <source src="media/lofimalletkwon.wav" type="audio/wav">
+        <p>Caso n carregar o áudio, o seu navegador n consegue carregar áudios <a href="media/lofimalletkwon.mp3">clique aqui para baixar o arquivo</a></p>
+    </audio>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

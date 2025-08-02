@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>celulas mescladas</title>
+    <style>
+        body{
+            background-color: rgba(128, 128, 128, 0.384);
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        table{
+            width: 300px;
+            margin: 20px auto;
+        }
+
+        table#desafio3 {
+            border-collapse: collapse;
+            width: 70%;
+        }
+
+        table#desafio3 th{
+            background-color: #0000007c;
+            color: white;
+            font-weight: bold;
+        }
+       
+        caption {
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        td, th{
+            width: 100px;
+            border: 1px solid black;
+            text-align: center;
+            background-color: white;
+        }
+
+    
+    </style>
+</head>
+<body>
+  
+    <h1>desafios</h1>
+    <table id="desafio3">
+        <caption>desafio3</caption>
+
+        <thead>
+            <tr>
+                <th rowspan="2">Área</th>
+                <th rowspan="2">Disciplina</th>
+                <th colspan="2" scope="colgroup">Notas</th>
+                <th rowspan="2">Média</th>
+            </tr>
+            <tr>
+                <th>Nota 1</th>
+                <th>Nota 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="4" scope="rowgroup" >Exatas</th>
+                <td>Matemática</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Física</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+             <tr>
+                <td>Química</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+             </tr>
+              <tr>
+                <td>Biologia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+              </tr>
+              <tr>
+                <th colspan="4" scope="colgroup">Média de Exatas</th>
+                <td>0.0</td>
+              </tr>
+              <tr>
+                <th rowspan="2" scope="rowgroup" class="Disciplinas">Humanas</th>
+                <td>História</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+              </tr>
+              <tr>
+                <td>Geografia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+              </tr>
+
+              <tr>
+                <th colspan="4" scope="colgroup">Média de Humanas</th>
+                <td>0.0</td>
+              </tr>
+        </tbody>
+
+
+    </table>
+
+
+
+
+
+    <table>
+        <caption>desafio1</caption>
+        <tbody>
+            <tr>     
+                <td>1</td>
+                <td>2</td>
+                <td rowspan="2">3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td colspan="3">8</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td rowspan="2">10</td>
+                <td colspan="2">11</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table>
+        <caption>desafio2</caption>
+        <tbody>
+            <tr>
+                <td colspan="4">A</td>
+                <td rowspan="4">B</td>
+            </tr>
+            <tr>
+                <TD rowspan="4">C</TD>
+                <TD>D</TD>
+                <TD>E</TD>
+                <TD>F</TD>
+            </tr>
+            <tr>
+                <TD>G</TD>
+                <TD>H</TD>
+                <TD>I</TD>
+            </tr>
+            <tr>
+                <TD>J</TD>
+                <TD>L</TD>
+                <TD>M</TD>
+            </tr>
+            <tr>
+                <TD colspan="4">N</TD>
+            </tr>
+
+        </tbody>
+    </table>
+
+
+
+</body>
+</html
