@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form04</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+
+            background-color: rgba(128, 128, 128, 0.699);
+            color: black;
+        }
+        fieldset{
+            background-color: rgba(0, 0, 0, 0.486);
+            color: white;
+            text-align: center;
+            border: 2px solid black;
+
+            min-width: 300px;
+            max-width: 700px;
+            margin: 10px auto;
+            padding: 20px;
+        }
+
+        legend{
+            padding: 0px 3px;
+            font-weight: bold;
+            font-size: larger;
+
+        }
+
+        form{
+            background-color: rgb(37, 110, 122);
+            border-radius: 10px;
+            
+            min-width: 320px;
+            max-width: 700px;
+            margin: 20px auto;
+            padding: 10px;
+        }
+
+        #enviar-button{
+            display: flex;
+            justify-content: end;
+            align-items: end;
+
+            margin-right: 10px;
+        }
+
+        form #enviar{
+
+            background-color: rgb(7, 73, 73);
+            color: white;
+            padding: 3px;
+        }
+    </style>
+</head>
+<body>
+    <h1>form04</h1>
+    <form action="cadastro.js" autocomplete="on">
+        
+        <fieldset>
+            <legend>Dados</legend>
+            <p>
+                <label for="iemail">Email:</label>
+                <br>
+                <input type="email" name="email" id="iemail">
+            </p>
+            <p>
+                <label for="itelefoen">Telefone:</label>
+                <br>
+                <input type="tel" name="Telefone" id="itelefone" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" required placeholder="(xx) xxxx-xxxx">
+            </p>
+        </fieldset>
+        <p id="enviar-button"><input type="submit" value="Enviar" id="enviar"></p>
+    </form>
+</body>
+</html>
